@@ -1,0 +1,235 @@
+.results-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ─── Empty State ─── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 40px;
+  min-height: 400px;
+}
+
+.empty-icon {
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+
+.empty-state h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.empty-state p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+/* ─── Loading State ─── */
+.loading-state {
+  padding: 40px;
+}
+
+.loading-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.loading-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.loading-header p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.agent-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-glass);
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.progress-name {
+  font-size: 13px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.progress-status {
+  font-size: 12px;
+  color: var(--accent-amber);
+}
+
+/* ─── Error State ─── */
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.error-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.error-state h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-rose);
+  margin-bottom: 8px;
+}
+
+.error-state p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  max-width: 400px;
+}
+
+/* ─── Summary Card ─── */
+.summary-card {
+  padding: 24px;
+}
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.summary-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.summary-content {
+  line-height: 1.7;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* ─── Agent Result Cards ─── */
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: -4px;
+}
+
+.agent-result-card {
+  padding: 20px;
+}
+
+.ar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.ar-name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ar-role {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.ar-content {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  border-top: 1px solid var(--border-glass);
+  padding-top: 14px;
+}
+
+/* ─── Formatted Text ─── */
+.formatted-text h3 {
+  font-size: 16px;
+  color: var(--text-primary);
+  margin: 16px 0 8px;
+}
+
+.formatted-text h4 {
+  font-size: 14px;
+  color: var(--text-primary);
+  margin: 12px 0 6px;
+}
+
+.formatted-text p {
+  margin-bottom: 6px;
+}
+
+.formatted-text li {
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+
+.formatted-text hr {
+  border: none;
+  border-top: 1px solid var(--border-glass);
+  margin: 12px 0;
+}
+
+.formatted-text strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.formatted-text .inline-link {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.formatted-text .inline-link:hover {
+  color: #22d3ee;
+  border-bottom-color: var(--accent-cyan);
+}
