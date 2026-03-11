@@ -11,7 +11,7 @@ if load_dotenv is not None:
 
 
 HUGGINGFACE_API_KEY = os.getenv('HUGGINGFACE_API_KEY', '').strip()
-HF_MODEL = os.getenv('HF_MODEL', 'Qwen/Qwen2.5-1.5B-Instruct').strip()
+HF_MODEL = os.getenv('HF_MODEL', 'meta-llama/Meta-Llama-3-8B-Instruct').strip()
 
 VECTOR_DB_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'vector_db')
 UPLOADS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'uploads')
